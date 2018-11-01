@@ -41,7 +41,7 @@ arrString.sort();
 arrBoolean.sort(function(a, b) {
   return b - a;
 });
-var result = MegaTotalArr.concat(arrNumber,arrNull,arrString,arrObject,arrUndefined,arrBoolean);
-    return result;
+    MegaTotalArr = MegaTotalArr.concat(arrNumber,arrNull,arrString,arrObject,arrUndefined,arrBoolean);
+    return MegaTotalArr;
 };
 
