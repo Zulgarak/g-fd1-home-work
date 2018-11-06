@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        block title
+    body
+        div(class="conteiner" style="width: 300px")
+            div(class="header")
+                block h1
+            div(class="navigation")
+                span Navigation: 
+                a(href="./index.html") home
+                = " "
+                a(href="./about.html") about
+                hr
+                block navigation
+            div(class="content" style="padding-left: 10px")
+                block content
+                hr
+            div(class="footer")
+                a(href="#up") Up
+                = " "
+                block footer
+
+
+
+
