@@ -15,7 +15,7 @@ var slideSize = element.clientWidth,
 
     function prev(){
         currentPosition -= slideSize;
-        if (currentPosition <= element.scrollWidth) {
+        if (currentPosition < slideSize) {
             currentPosition = 0;
         };
         element.scroll({left: currentPosition, behavior: 'smooth'});
