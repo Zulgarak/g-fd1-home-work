@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+}
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+.arrow {
+    position: absolute;
+    top: 200px;
+    width: 40px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none; 
+}
+#prev {
+    left: 20px;
+}
+#next {
+    right: 20px;
+}
+.arrow:hover {
+    opacity: 0.6;
+}
+
