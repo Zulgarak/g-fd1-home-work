@@ -1,0 +1,126 @@
+html, body, .container {
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+.header {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a68a8a;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f68f8f;
+}
+
+.main {
+    height: calc(100% - 200px);
+    min-height: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #62dbca;
+}
+
+.content  {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    margin: 15px;
+}
+
+.navbar-brand {
+    min-width: 45px;
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-outline-success {
+  color: black;
+  background-color: transparent;
+  background-image: none;
+  border-color: black;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-outline-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background: url("./slides/1.jpg") no-repeat 50% 50% ;
+    background-size: cover;
+}
+.carousel-item:nth-child(2) {
+    background: url("./slides/4.jpg") no-repeat 50% 50% ;
+    background-size: cover;
+}
+.carousel-item:nth-child(3) {
+    background: url("./slides/5.jpg") no-repeat 50% 50% ;
+    background-size: cover;
+}
+
+.carousel-item {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
