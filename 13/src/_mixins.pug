@@ -1,0 +1,35 @@
+mixin navBarHead()
+    each navItem in navItems
+        a.nav-item.nav-link(href="" + navItem.href)= navItem.name
+
+
+mixin refPages(pages)
+    div.col-9
+        each page in pages
+            div.col.mt-2
+                h2.col= page.name
+                div.col= page.previewContent
+                    a.badge(href="/page/" + page.id + ".html")= '...'
+
+
+mixin addContent(page)
+        div.col
+            h2.col= page.name
+            div.col= page.fullContent
+
+
+mixin addLinkAside(pages)
+    ul.nav.flex-column.pl-3
+        each page in pages
+            li.nav-item
+                a.nav-link(href="/page/" + page.id + ".html")= page.name
+
+
+mixin addAllAside()
+    div.col-3
+        nav
+            ul.nav.flex-column
+                each navItem in navItems
+                    li.nav-item
+                        a.nav-link(href="" + navItem.href)= navItem.name
+            +addLinkAside(pages)

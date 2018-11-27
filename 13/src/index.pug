@@ -1,0 +1,8 @@
+extend ./_template.pug
+include ./_mixins.pug
+
+block container
+    include ./_navbar.pug
+    div.row
+        +addAllAside
+        +refPages(pages)
