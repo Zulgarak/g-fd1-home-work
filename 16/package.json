@@ -1,0 +1,8 @@
+{
+  "name": "16",
+  "version": "1.0.0",
+  "description": "Home work for G-FD1-05-18",
+  "scripts": {
+    "start": "sass --watch style.sass:style.css"
+  }
+}
