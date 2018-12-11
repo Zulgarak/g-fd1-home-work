@@ -1,0 +1,55 @@
+@import 'vars'
+
+.header-phone
+  color: $additionalColor
+  font-size: 20px
+  font-weight: 700
+
+.header
+  min-width: 900px
+  height: 70px
+  color: #fff
+  background: $mainColor url("/assets/img/bg_head_center.jpg") center no-repeat
+
+.container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 70px
+.header-logo
+  position: relative
+  top: 35px
+  height: 140px
+  z-index: 1
+
+.header-about
+  span
+    display: block
+    font-size: 16px
+
+.header-company__name
+  margin-bottom: 5px
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.header-phone
+  position: relative
+  padding-left: 35px
+  a
+    display: block
+    font-size: 20px
+    font-weight: 700
+    &:first-child
+      margin-bottom: 5px
+  &::before
+    content: " "
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -12px
+    display: block
+    width: 24px
+    height: 24px
+    background: url("/assets/img/phone.png") 0 0 no-repeat
+    background-size: 100%

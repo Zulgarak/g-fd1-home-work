@@ -1,0 +1,18 @@
+header.header
+    .container
+        .header-nav
+            .sandwich
+                span.sandwich__line.sandwich__line--top
+                span.sandwich__line.sandwich__line--middle
+                span.sandwich__line.sandwich__line--bottom
+            span.header-nav__title Меню
+            include _menu.pug
+        .header-company
+            h1.header-company__name Группа компаний Emerald
+            span.header-company__descr Организация свадебных торжеств
+        .logo.header-logo
+            img(src="assets/img/Emerald_logo.png" alt="logo")
+        .header-phone
+            a(href="#") +7 (495) 195-57-22
+            a(href="#") +7 (985) 394-10-57
+        a(href="#").header-phone__btn Заказать звонок
