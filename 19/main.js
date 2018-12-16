@@ -24,9 +24,6 @@ var data = [
     },
 ];
 
-function forMap(item) {
-    return 'item 1 ' + item.text
-};
 
 function forFilter(item) {
     if(item.display && !item.disable) {
@@ -34,10 +31,17 @@ function forFilter(item) {
     };
 };
 
+function forMap(item) {
+    return 'item 1 ' + item.text
+};
+
 function forLog(item) {
   console.log(item);
 }
-
+//Без сохранения промежуточного варианта
 data.filter(forFilter).map(forMap).forEach(forLog);
 
+//С сохранением промежуточного результата
+// var result = data.filter(forFilter).map(forMap);
+// result.forEach(forLog);
 })();
