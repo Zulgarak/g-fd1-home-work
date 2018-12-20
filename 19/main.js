@@ -26,9 +26,7 @@ var data = [
 
 
 function forFilter(item) {
-    if(item.display && !item.disable) {
-        return item;
-    };
+    return item.display && !item.disable;
 };
 
 function forMap(item) {
